@@ -9,7 +9,7 @@ interface StudentDetailProps {
 }
 
 export default function StudentDetail({ student }: StudentDetailProps) {
-  const { dispatch } = useStudents();
+  const { students, dispatch } = useStudents();
 
   const handleRemove = () => {
     Alert.alert(
